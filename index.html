@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://www.nescafe.com/mena/sites/default/files/2023-08/Coffee%20Types%20Banner%20Desktop.jpg">
+    <title>Cafe</title>
+</head>
+<body>
+    <section id="container">
+   
+    <!-- header -->
+<header>
+    <nav class="nav">
+        <a href="" class="logo">Coffee<span>.</span></a>
+        <a href="#MENU-LINKS" id="open" class="media-btn" onclick="Menu()">Menu</a>
+        <a href="#MENU-LINKS" id="Close" class="media-btn close-btn" onclick="MenuCloseBtn()">Close</a>
+        <ul class="menu-links" id="MENU-LINKS">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="../Products/index.html" >Products</a></li>
+            <li><a href="">Testimolies</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">About us</a></li>
+        </ul>
+        </nav>
+    </header>
+    <!-- hero -->
+     <div id="hero-section">
+        <div class="title" id="TITLE">
+
+            <h1>Start Your Day With Fresh Coffee</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor porro obcaecati possimus omnis vel quod, consectetur aut veniam est facere?</p>
+        <div>
+            <a href="#Log"class="Order" onclick="order()">Order Now</a>
+        </div>
+            
+        </div>
+        <div id="Log" class="title login">
+            <h1>Login Now</h1>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" id="username" placeholder="Username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" placeholder="password">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+     <!-- login -->
+   
+
+
+      <script>
+       /* function order(){
+            var show = document.getElementById("Log");
+            innerHTML = show.style="display:block; opacity:1;"
+        }*/
+        function Menu(click){
+            var menu = document.getElementById('MENU-LINKS');
+            var Open = document.getElementById('open');
+            var close = document.getElementById('Close');
+           // var title = document.getElementById('TITLE');
+            innerHTML = menu.style="display:flex; animation-name:menu-links;animation-duration: 0.8s;  animation-timing-function: ease;animation-fill-mode: forwards;transform: translateX(-120px);"
+           // innerHTML = title.style="z-index:1;"
+            innerHTML = close.style="display:flex"
+            innerHTML = Open.style="display:none"
+        }
+        function MenuCloseBtn(){
+            var Open = document.getElementById('open');
+            var close = document.getElementById('Close');
+             innerHTML = close.style="display:none"
+            var shutdown = document.getElementById('MENU-LINKS');
+              innerHTML = Open.style="display:flex"
+             innerHTML = shutdown.style="display:flex;animation-name:close-menu-links;animation-duration: 0.7s; animation-timing-function: ease;animation-fill-mode: forwards;"
+        }
+      </script>
+       </section>
+        
+</body>
+</html>
